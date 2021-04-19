@@ -1,32 +1,3 @@
-@main-pink: #F26376;
-@main-pink2: #F16D7F;
-@main-font: Lato, sans-serif;
-@color-btn-gr: #a4a4a4;
-@color-gray: #6F6E6E;
-
-
-.bordered(@_color) {
-    border: solid 1px @_color;
-}
-
-.font(@_weigth: 400, @_size: 16px, @_height: 26px) {
-    font-weight: @_weigth;
-    font-size: @_size;
-    line-height: @_height;
-    font-family: Lato, sans-serif;
-}
-
-.font-productinCart() {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-}
-
-.flex() {
-    display: flex;
-    justify-content: flex-start;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -34,13 +5,11 @@
 
 body {
     margin: 0;
-
 }
 
 .wrap {
     max-width: 1140px;
     margin: 0 auto;
-
 }
 
 .header-wrap {
@@ -49,7 +18,6 @@ body {
     height: 75px;
     align-items: center;
     background-color: #222222;
-
 }
 
 #logo {
@@ -89,7 +57,7 @@ body {
     height: 12px;
     right: 17px;
     top: 16px;
-    color: @color-gray;
+    color: #6F6E6E;
     background-color: #ffffff;
     border: none;
     outline: none;
@@ -104,7 +72,10 @@ body {
 }
 
 .Menu-name {
-    .font(700, 14px, 17px);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato, sans-serif;
     color: #000000;
     text-transform: uppercase;
     margin: 37px 0 24px 34px;
@@ -114,40 +85,63 @@ body {
     list-style-type: none;
     margin-left: 34px;
     padding: 0;
+}
 
-    > li {
-        list-style-type: none;
-        .font(400, 14px, 17px);
-        color: @color-gray;
-        text-transform: capitalize;
-    }
+.menu-list > li {
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato, sans-serif;
+    color: #6F6E6E;
+    text-transform: capitalize;
 }
 
 .menu-item-description {
     list-style-type: none;
     padding: 0;
-
-    li:first-child {
-        margin: 12px 0 0 20px;
-    }
-
-    li:nth-child(2,3,4,5,6) {
-        margin: 11px 0 0 20px;
-    }
 }
 
+.menu-item-description li:first-child {
+    margin: 12px 0 0 20px;
+}
+
+.menu-item-description li:nth-child(2) {
+    margin: 11px 0 0 20px;
+}
+
+.menu-item-description li:nth-child(3) {
+    margin: 11px 0 0 20px;
+}
+.menu-item-description li:nth-child(4) {
+    margin: 11px 0 0 20px;
+}
+
+.menu-item-description li:nth-child(5) {
+    margin: 11px 0 0 20px;
+}
+
+.menu-item-description li:nth-child(6) {
+    margin: 11px 0 0 20px;
+}
 
 .menu-link {
     text-decoration: none;
     text-transform: capitalize;
-    .font(400, 14px, 17px);
-    color: @color-gray;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato, sans-serif;
+    color: #6F6E6E;
 }
 
 .header-sort {
     text-transform: uppercase;
-    .font(400, 14px, 17px);
-    color: @main-pink;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato, sans-serif;
+    color: #F26376;
     border-style: none;
 }
 
@@ -158,10 +152,8 @@ body {
 .promo-wrap {
     max-width: 1140px;
     background-size: 100%;
-
     margin: 0 auto;
     display: flex;
-
     justify-content: flex-start;
     align-items: center;
 }
@@ -174,8 +166,6 @@ body {
     min-height: 765px;
 }
 
-.promo-text {}
-
 .promo-text-p {
     border-left: 12px solid #F16D7F;
     margin-left: 64px;
@@ -183,24 +173,32 @@ body {
 }
 
 .promo-H1 {
-    .font(900, 48px, 58px);
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    font-family: Lato, sans-serif;
     color: #222222;
 }
 
 .promo2-H2 {
-    .font(700, 37px, 44.5px);
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 44.5px;
+    font-family: Lato, sans-serif;
     color: #222222;
 }
 
 .promo-fashion {
-    .font(700, 37px, 44.5px);
-    color: @main-pink;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 44.5px;
+    font-family: Lato, sans-serif;
+    color: #F26376;
 }
 
 .categories {
     background-color: #ffffff;
     height: 630px;
-
 }
 
 .wrap-categories {
@@ -226,7 +224,6 @@ body {
     height: 260px;
     background-image: url(image/Cat-men.png);
     text-align: center;
-
 }
 
 .cat-kids {
@@ -253,12 +250,18 @@ body {
 }
 
 .cat-promo {
-    .font(400, 16px, 19px);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
     color: #ffffff;
 }
 
 .cat-name {
-    .font(700, 24px, 29px);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    font-family: Lato, sans-serif;
     color: #F16D7F;
 }
 
@@ -267,13 +270,19 @@ body {
 }
 
 .fetured {
-    .font(400, 30px, 36px);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    font-family: Lato, sans-serif;
     color: #222222;
     text-align: center;
 }
 
 .text-products {
-    .font(400, 14px, 17px);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato, sans-serif;
     color: #9f9f9f;
     text-align: center;
     margin-top: 6px;
@@ -291,47 +300,52 @@ body {
     justify-content: space-between;
     align-content: space-between;
     margin-top: 48px;
-
 }
 
 .products-card {
-    height: 581px;
-    width: 360px;
+    height: 450px;
+    width: 340px;
     background-color: #f8f8f8;
-
-    &:hover {
-        transform: scale(1.1);
-        transition: 0.7s;
-    }
-
-    //&:hover:nth-child(2n-1) {
-    //    -webkit-transform: rotate(180deg);
-    //    transform: rotate(180deg);
-    //    transition: 1s;
-    //}
 }
 
+/*!*.products-card:hover {*!*/
+/*!*  transform: scale(1.1);*!*/
+/*!*  transition: 0.5s;*!*/
+/*}*/
+/*.products-card:hover:nth-child(2n-1) {*/
+/*  -webkit-transform: rotate(180deg);*/
+/*  transform: rotate(180deg);*/
+/*  transition: 1s;*/
+/*}*/
+
 .product-name {
-    .font(400, 16px, 19px);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
     color: #000000;
     text-align: left;
-    margin: 24.35px 0 12.65px 18px;
-
-
+    margin: 10px 0 12.65px 18px;
 }
 
 .product-text {
-    .font(300, 14px, 17px);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato, sans-serif;
     color: #5D5D5D;
     text-align: left;
     margin: 0 28.8px 0 18px;
 }
 
 .product-price {
-    .font(400, 16px, 19px);
-    color: @main-pink2;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
+    color: #F16D7F;
     text-align: left;
-    margin: 18px 0 0 18px;
+    margin: 10px 0 0 18px;
 }
 
 .button-products {
@@ -342,24 +356,46 @@ body {
     width: 211px;
     height: 47px;
     text-align: center;
-    border: 1px solid @main-pink;
-    color: @main-pink;
-    .font(400, 16px, 19px);
+    border: 1px solid #F26376;
+    color: #F26376;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
     background-color: #ffffff;
     cursor: pointer;
+}
 
-    &:hover {
-        background-color: @main-pink;
-        color: #ffffff;
-    }
+.btn-products:hover {
+    background-color: #F26376;
+    color: #ffffff;
+}
+
+.btn-products1 {
+    width: 190px;
+    height: 45px;
+    text-align: center;
+    border: 1px solid #F26376;
+    color: #F26376;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin: 10px 0 12px 70px;
+}
+
+.btn-products1:hover {
+    background-color: #F26376;
+    color: #ffffff;
 }
 
 .button-text {
     text-align: inherit;
     text-decoration: none;
-    color: @main-pink;
+    color: #F26376;
     padding-top: 15px;
-
 }
 
 .advantage {
@@ -384,16 +420,21 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 104px;
-
 }
 
 .advantage-name {
-    .font(400, 19.96px, 24px);
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    font-family: Lato, sans-serif;
     color: #FBFBFB;
 }
 
 .advantage-text {
-    .font(300, 13.972px, 17px);
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    font-family: Lato, sans-serif;
     color: #FBFBFB;
 }
 
@@ -405,14 +446,11 @@ body {
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
-
 }
 
 .feedback-wrap {
-
     display: flex;
     justify-content: space-between;
-
 }
 
 .feedback-tab1 {
@@ -423,11 +461,13 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-top: 97px;
-
 }
 
 .feedback-text-tab1 {
-    .font(400, 20px, 24px);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: Lato, sans-serif;
     margin-top: 27px;
     color: #222224;
     text-align: center;
@@ -444,17 +484,23 @@ body {
 }
 
 .feedback-title {
-    .font(700, 24px, 37.73px);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37.73px;
+    font-family: Lato, sans-serif;
     color: #222224;
 }
 
 .feedback-text-tab2 {
-    .font(400, 18px, 30.1px);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30.1px;
+    font-family: Lato, sans-serif;
     color: #222224;
     margin-top: -20px;
 }
 
-.feedback-suscribe-button {
+.feedback-subscribe-button {
     display: flex;
     justify-content: center;
 }
@@ -466,7 +512,10 @@ body {
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
     padding-left: 22px;
-    .font(400, 14px, 16.8px);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+    font-family: Lato, sans-serif;
     color: #222224;
     Border: none;
 }
@@ -475,15 +524,17 @@ body {
     outline: none;
 }
 
-
 .feedback-button {
     background: #F16D7F;
     width: 100px;
     height: 49px;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
-    padding-left: 22px;
-    .font(400, 14px, 16.8px);
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+    font-family: Lato, sans-serif;
     color: #FFFFFF;
     padding: 16px 20px;
 }
@@ -505,7 +556,10 @@ body {
 }
 
 .footer-allrights {
-    .font(400, 16px, 19px);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
     color: #FBFBFB;
     margin-top: 30px;
 }
@@ -530,7 +584,7 @@ body {
 }
 
 .logo-footer:hover {
-    background-color: @main-pink;
+    background-color: #F26376;
     color: #ffffff;
 }
 
@@ -539,7 +593,6 @@ body {
 }
 
 /* уникальный CSS для страницы catalog.html */
-
 .nav-bar {
     height: 148px;
     background-color: #F8F3F4;
@@ -553,37 +606,45 @@ body {
 .nav-bar-wrap div {
     display: flex;
     align-items: center;
-
 }
 
 .nav-bar-title {
     color: #F16D7F;
-    .font(400, 24px, 29px);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    font-family: Lato, sans-serif;
     text-transform: uppercase;
+}
 
-    &:hover {
-        transition-property: font-size, color;
-        transition-duration: 4s;
-        transition-delay: 0.5s;
-        font-size: 50px;
-        color: darkslategrey;
-        transition-timing-function: linear;
-    }
+.nav-bar-title:hover {
+    transition-property: font-size, color;
+    transition-duration: 4s;
+    transition-delay: 0.5s;
+    font-size: 50px;
+    color: darkslategrey;
+    transition-timing-function: linear;
 }
 
 .nav-bar a {
     color: #636363;
-    .font(300, 14px, 17px);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato, sans-serif;
     text-decoration: none;
 }
 
 .nav-bar a:hover {
     color: #F16D7F;
-    .font(700, 14px, 17px);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato, sans-serif;
 }
 
 .wrap-products-catalog {
-    height: 2122px;
+    height: 900px;
     background-color: #ffffff;
 }
 
@@ -596,15 +657,21 @@ body {
 .filter-nav-tab1 {
     display: flex;
     color: #000000;
-    .font(600, 14px, 17px);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato, sans-serif;
     text-transform: uppercase;
     align-items: flex-end;
 }
 
 .filter-nav-tab2 {
     display: flex;
-    color: @color-gray;
-    .font(400, 14px, 17px);
+    color: #6F6E6E;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato, sans-serif;
     text-transform: uppercase;
     align-items: flex-end;
     margin-left: 320px;
@@ -621,7 +688,6 @@ body {
 
 .sort-price {
     margin-left: 27.98px;
-
 }
 
 .sort-arrow-down {
@@ -638,7 +704,7 @@ body {
 }
 
 .wrap-products-main {
-    height: 1804px;
+    height: 600px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -657,32 +723,50 @@ body {
 }
 
 .digits-pagination-cat {
-    .font(300, 16px, 19px);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
     padding: 0 10.5px 0 10.5px;
 }
 
 .digits-pagination-cat:first-child {
-    .font(300, 16px, 19px);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
     padding: 0 10px 0 15.45px;
 }
 
 .digits-pagination-cat:last-child {
-    .font(300, 16px, 19px);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
     padding: 0 15.45px 0 17px;
 }
 
 .digits-pagination-cat:nth-child(9) {
-    .font(300, 16px, 19px);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
     padding: 0 0 0 1px;
 }
 
 .digits-pagination-cat:nth-child(8) {
-    .font(300, 16px, 19px);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
     padding: 0 0 0 0;
 }
 
 .digits-pagination-cat:nth-child(7) {
-    .font(300, 16px, 19px);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
     padding: 0 1px 0 10.5px;
 }
 
@@ -696,11 +780,10 @@ body {
 }
 
 .arrow-pag-cat {
-    margin: 0 15.45px 15.45px
+    margin: 0 15.45px 15.45px;
 }
 
 /* Уникальный CSS для страницы Product */
-
 .product-slider {
     height: 777px;
     background-color: #f7f7f7;
@@ -711,7 +794,6 @@ body {
     margin-top: 11px;
 }
 
-
 .arrow {
     width: 47px;
     height: 47px;
@@ -721,7 +803,6 @@ body {
     display: flex;
     justify-content: center;
     padding: 12.65px 12.65px 12.65px 17.3px;
-
 }
 
 .left {
@@ -730,15 +811,12 @@ body {
 
 .right {
     right: 0;
-
 }
 
 .wrap-product {
     display: flex;
     justify-content: center;
     margin-bottom: 42px;
-
-
 }
 
 .product-description {
@@ -758,15 +836,21 @@ body {
 }
 
 .collection {
-    .font(300, 14px, 17px);
-    color: @main-pink2;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato, sans-serif;
+    color: #F16D7F;
     text-transform: uppercase;
     margin-top: 64.54px;
     margin-bottom: 12.1px;
 }
 
 .name-product {
-    .font(300, 18px, 22px);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: Lato, sans-serif;
     color: #4d4d4d;
     text-transform: uppercase;
     margin-top: 12.1px;
@@ -776,12 +860,18 @@ body {
 .description-product {
     width: 555px;
     height: 51.43px;
-    .font(300, 14px, 17px);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato, sans-serif;
     color: #5e5e5e;
 }
 
 .price-product {
-    .font(300, 24px, 29px);
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    font-family: Lato, sans-serif;
     color: #EF5B70;
     margin-top: 32.27px;
 }
@@ -795,12 +885,13 @@ body {
     justify-content: center;
 }
 
-
-
 .filter-nav-product {
     display: flex;
-    color: @color-gray;
-    .font(400, 14px, 17px);
+    color: #6F6E6E;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato, sans-serif;
     text-transform: uppercase;
     align-items: flex-end;
     list-style-type: none;
@@ -816,12 +907,15 @@ body {
 .button-add {
     width: 211px;
     height: 47.4px;
-    border: 1px solid @main-pink;
+    border: 1px solid #F26376;
     background-color: #ffffff;
-    color: @main-pink;
+    color: #F26376;
     display: flex;
     justify-content: center;
-    .font(400, 16px, 19px);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
     padding-top: 14.62px;
     background: url(image/Trolley-red.svg) no-repeat;
     background-position: 23.5px 14px;
@@ -857,7 +951,8 @@ body {
 .wrap-cart {
     height: 870px;
     margin-top: 95px;
-    .flex();
+    display: flex;
+    justify-content: flex-start;
 }
 
 .cart-tab-left {
@@ -865,7 +960,6 @@ body {
     width: 651px;
     display: flex;
     flex-direction: column;
-
 }
 
 .productinCart {
@@ -875,7 +969,6 @@ body {
     display: flex;
     justify-content: flex-start;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-
 }
 
 .menu-option {
@@ -885,7 +978,6 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
 
 .cart-tab-right {
     height: 774px;
@@ -901,14 +993,18 @@ body {
 }
 
 .productCart-description {
-    font-family: @main-font;
+    font-family: Lato, sans-serif;
     margin-left: 31px;
-    .font-productinCart();
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
 }
 
 .productCart-name {
     margin-top: 22px;
-    .font-productinCart();
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
     width: 337px;
     display: flex;
     justify-content: space-between;
@@ -916,29 +1012,44 @@ body {
 
 .productCart-price {
     margin-top: 42px;
-    .font-productinCart();
-    .flex();
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .productCart-options {
     margin-top: 6px;
-    .font-productinCart();
-    .flex();
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .productinCart-priceName {
-    .font(400, 22px, 26px);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    font-family: Lato, sans-serif;
     color: #575757;
 }
 
 .productinCart-priceColor {
-    .font(400, 22px, 26px);
-    color: @main-pink;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    font-family: Lato, sans-serif;
+    color: #F26376;
     margin-left: 7px;
 }
 
 .productinCart-value {
-    .font(400, 22px, 26px);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    font-family: Lato, sans-serif;
     color: #6f6e6e;
     margin-left: 7px;
 }
@@ -948,54 +1059,72 @@ body {
     height: 24.12px;
     margin-left: 24.41px;
     outline: 1px solid #eaeaea;
-    .font(400, 18px, 22px);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: Lato, sans-serif;
     color: #656565;
 }
 
 .clearcart-btn {
-    .font(300, 14px, 17px);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato, sans-serif;
     color: #656565;
     width: 225px;
     height: 50px;
     background-color: #ffffff;
-    .bordered(#a4a4a4);
+    border: solid 1px #a4a4a4;
     cursor: pointer;
+}
 
-    &:hover {
-        animation: goColor 3s infinite;
-        transition-delay: 0.5s;
-        transition: 0.5s;
-    }
+.clearcart-btn:hover {
+    animation: goColor 3s infinite;
+    transition-delay: 0.5s;
+    transition: 0.5s;
 }
 
 @keyframes goColor {
     0% {
         background-color: #ffffff;
         color: #656565;
-        .font(300, 14px, 17px);
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        font-family: Lato, sans-serif;
     }
-
     30% {
-        background-color: @main-pink2;
+        background-color: #F16D7F;
         color: #ffffff;
-        .font(400, 16px, 20px);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        font-family: Lato, sans-serif;
     }
-
     60% {
         background-color: mediumpurple;
         color: yellow;
-        .font(400, 16px, 20px);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        font-family: Lato, sans-serif;
     }
-
     100% {
         background-color: #ffffff;
         color: #656565;
-        .font(300, 14px, 17px);
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        font-family: Lato, sans-serif;
     }
 }
 
 .shipping {
-    .font(300, 16px, 19px);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
     color: #222222;
     text-transform: uppercase;
     margin-top: 17px;
@@ -1003,11 +1132,14 @@ body {
 }
 
 .cart-tab-right-input {
-    .bordered(#a4a4a4);
+    border: solid 1px #a4a4a4;
     margin-top: 20px;
     width: 360px;
     height: 45px;
-    .font(300, 13px, 16px);
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    font-family: Lato, sans-serif;
     padding-left: 16px;
     color: #222222;
     outline: none;
@@ -1016,11 +1148,14 @@ body {
 .getaQuote {
     background-color: #ffffff;
     margin-top: 24px;
-    .font(300, 11px, 13px);
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    font-family: Lato, sans-serif;
     color: #4a4a4a;
     width: 100.39px;
     height: 34px;
-    .bordered(#a4a4a4);
+    border: solid 1px #a4a4a4;
     text-transform: uppercase;
 }
 
@@ -1037,18 +1172,25 @@ body {
 .cart-checkout-btn {
     width: 273px;
     height: 50px;
-    background-color: @main-pink;
+    background-color: #F26376;
     color: #ffffff;
     text-transform: uppercase;
-    .font(300, 16px, 19px);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
     border-style: none;
     margin: 17px 43px 0 0;
     cursor: pointer;
 }
 
 .cart-subtotal {
-    .flex;
-    .font(400, 11px, 13px);
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    font-family: Lato, sans-serif;
     color: #4a4a4a;
     text-transform: uppercase;
     margin-top: 39px;
@@ -1056,51 +1198,60 @@ body {
 }
 
 .Cart-subtotal-name {
-    .font(400, 11px, 13px);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    font-family: Lato, sans-serif;
     color: #4a4a4a;
     margin-right: 25px;
-
 }
 
 .Cart-subtotal-priceColor {
-    .font(400, 11px, 13px);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    font-family: Lato, sans-serif;
     color: #4a4a4a;
 }
 
 .cart-grandTotal {
-    .flex;
+    display: flex;
+    justify-content: flex-start;
     margin: 12px 37px 0 0;
     text-transform: uppercase;
 }
 
 .Cart-priceName {
-    .font(300, 16px, 19px);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
     color: #222222;
 }
 
 .Cart-priceColor {
     margin-left: 25px;
-    color: @main-pink;
-    .font(700, 16px, 19px);
+    color: #F26376;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
 }
 
 .cart-line {
     margin: 21px 42px 0 0;
 }
 
-//CSS уникальный для страницы Registration 
-
-
 .wrap-registration {
     height: 675px;
-    .flex();
+    display: flex;
+    justify-content: flex-start;
 }
 
 .registration-tab-left {
     width: 360px;
     height: 515px;
     margin-top: 64px;
-
 }
 
 .registration-tab-right {
@@ -1111,24 +1262,32 @@ body {
 }
 
 .form-input {
-    .font(300, 16px, 19px);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
     color: #222222;
     text-transform: capitalize;
 }
 
 .form-input2 {
-    .font(300, 16px, 19px);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
     color: #222222;
     margin-top: 33px;
 }
-
 
 .registration-radio {
     margin: 31px 0 0 1px;
 }
 
 .registration-radio-btn1 {
-    .font(300, 11px, 13px);
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    font-family: Lato, sans-serif;
     color: #000000;
     margin-right: 10px;
 }
@@ -1137,11 +1296,17 @@ body {
     margin-left: 20px;
     color: #000000;
     margin-right: 10px;
-    .font(300, 11px, 13px);
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    font-family: Lato, sans-serif;
 }
 
 .description-password {
-    .font(300, 13px, 16px);
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    font-family: Lato, sans-serif;
     color: #B1B1B1;
     margin-top: 15px;
 }
@@ -1149,17 +1314,22 @@ body {
 .registration-join-btn {
     width: 167px;
     height: 50px;
-    background-color: @main-pink;
+    background-color: #F26376;
     color: #ffffff;
     text-transform: uppercase;
-    .font(300, 16px, 19px);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato, sans-serif;
     border-style: none;
     margin: 39px 0 0 0;
-    border: none;
 }
 
 .text-perks {
-    .font(300, 24px, 29px);
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    font-family: Lato, sans-serif;
     color: #000000;
 }
 
@@ -1183,10 +1353,9 @@ body {
     margin-top: 21px;
 }
 
-
 @media all and (max-width: 1172px) {
     .wrap {
-        max-width: 768px-16px*2;
+        max-width: 736px;
     }
 
     .promo-pic {
@@ -1204,18 +1373,27 @@ body {
     }
 
     .promo-H1 {
-        .font(900, 44px, 53px);
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 53px;
+        font-family: Lato, sans-serif;
         color: #222222;
     }
 
     .promo2-H2 {
-        .font(700, 24px, 29px);
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        font-family: Lato, sans-serif;
         color: #222222;
     }
 
     .promo-fashion {
-        .font(700, 24px, 29px);
-        color: @main-pink;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        font-family: Lato, sans-serif;
+        color: #F26376;
     }
 
     #logo {
@@ -1235,7 +1413,6 @@ body {
         width: 232px;
         background-size: 100%;
         background-image: url(image/Cat-women232x167.jpg);
-        //background-image: no-repeat;
         text-align: center;
         margin-top: 19.38px;
     }
@@ -1244,7 +1421,7 @@ body {
         height: 167.32px;
         width: 232px;
         background-size: 100%;
-        background-image: url(image/Cat-men232.44x167.62.jpg); /*no-repeat cover*//
+        background-image: url(image/Cat-men232.44x167.62.jpg);
         text-align: center;
         margin-top: 19.38px;
     }
@@ -1254,7 +1431,6 @@ body {
         width: 232px;
         background-size: 100%;
         background-image: url(image/Cat-kids232.44x167.62.jpg);
-        //background-image: no-repeat;
         text-align: center;
         margin-top: 19.38px;
     }
@@ -1263,7 +1439,7 @@ body {
         height: 116px;
         flex-basis: 100%;
         background-image: url(image/Cat-accesories-734x116.jpg);
-        margin-top: 19.38px;
+        margin-top: 19px;
         text-align: center;
     }
 
@@ -1272,7 +1448,7 @@ body {
     }
 
     .categories {
-        height: 476.91px;
+        height: 476px;
     }
 
     .cat-acces {
@@ -1280,15 +1456,20 @@ body {
     }
 
     .cat-promo {
-        .font(400, 16px, 19px);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        font-family: Lato, sans-serif;
         color: #ffffff;
     }
 
     .cat-name {
-        .font(700, 24px, 29px);
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        font-family: Lato, sans-serif;
         color: #F16D7F;
     }
-
 
     .wrap-categories {
         height: 476px;
@@ -1301,7 +1482,10 @@ body {
     }
 
     .text-products {
-        .font(400, 14px, 17px);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        font-family: Lato, sans-serif;
         color: #9f9f9f;
         text-align: center;
         margin-top: 6px;
@@ -1319,7 +1503,6 @@ body {
         justify-content: space-between;
         align-content: space-between;
         margin-top: 72px;
-
     }
 
     .button-products {
@@ -1378,14 +1561,14 @@ body {
         margin-top: 16px;
     }
 
-    .feedback-suscribe-button {
+    .feedback-subscribe-button {
         margin-top: 30px;
     }
 }
 
 @media all and (max-width: 760px) {
     .wrap {
-        max-width: 375px-16px*2;
+        max-width: 343px;
         border: 1px solid green;
     }
 
@@ -1397,9 +1580,8 @@ body {
     .promo {
         background: none;
         background-color: #F1E4E6;
-        max-width: 375px-16px*2;
+        max-width: 343px;
         background-position: center;
-
     }
 
     .promo-pic {
@@ -1416,18 +1598,27 @@ body {
     }
 
     .promo-H1 {
-        .font(900, 38px, 46px);
+        font-weight: 900;
+        font-size: 38px;
+        line-height: 46px;
+        font-family: Lato, sans-serif;
         color: #222222;
     }
 
     .promo2-H2 {
-        .font(700, 20px, 24px);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        font-family: Lato, sans-serif;
         color: #222222;
     }
 
     .promo-fashion {
-        .font(700, 20px, 24px);
-        color: @main-pink;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        font-family: Lato, sans-serif;
+        color: #F26376;
     }
 
     #logo {
@@ -1439,7 +1630,7 @@ body {
         width: 343px;
         background-size: 100%;
         background-image: url(image/Cat-women232x167.jpg);
-        //background-image: no-repeat;
+        background-image: no-repeat;
         text-align: center;
         margin-top: 19.38px;
     }
@@ -1448,7 +1639,7 @@ body {
         height: 247px;
         width: 343px;
         background-size: 100%;
-        //background-image: url(image/Cat-men232.44x167.62.jpg) no-repeat cover;
+        background-image: url(image/Cat-men232.44x167.62.jpg) no-repeat cover;
         text-align: center;
         margin-top: 19.38px;
     }
@@ -1458,7 +1649,7 @@ body {
         width: 343px;
         background-size: 100%;
         background-image: url(image/Cat-kids232.44x167.62.jpg);
-        //background-image: no-repeat;
+        background-image: no-repeat;
         text-align: center;
         margin-top: 19.38px;
     }
@@ -1484,15 +1675,20 @@ body {
     }
 
     .cat-promo {
-        .font(400, 16px, 19px);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        font-family: Lato, sans-serif;
         color: #ffffff;
     }
 
     .cat-name {
-        .font(700, 24px, 29px);
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        font-family: Lato, sans-serif;
         color: #F16D7F;
     }
-
 
     .wrap-categories {
         height: 476px;
@@ -1505,7 +1701,10 @@ body {
     }
 
     .text-products {
-        .font(400, 14px, 17px);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        font-family: Lato, sans-serif;
         color: #9f9f9f;
         text-align: center;
         margin-top: 6px;
@@ -1525,7 +1724,27 @@ body {
         margin-top: 64.7px;
     }
 
+    .button-products {
+        margin: 48.5px 0 0 278.5px;
+    }
 
+    .advantage {
+        background-color: #222224;
+    }
+
+    .advantage-wrap {
+        width: 100%;
+        height: 610px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .advantage-del-sale-crown {
+        margin-top: 48px;
+    }
 
     .feedback {
         height: 693px;
@@ -1562,5 +1781,4 @@ body {
     .feedback-suscribe-button {
         margin-top: 30px;
     }
-
 }

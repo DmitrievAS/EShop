@@ -1,0 +1,24 @@
+[
+{
+  "id": "1",
+  "title": "L-Glutathione",
+  "price": "35",
+  "descriptionProduct": "Способствует расщеплению окисленных жиров и необходим для углеводного обмена",
+  "imgName": "v799-10"
+},
+  {
+    "id": "2",
+    "title": "Magnesium Citrate",
+    "price": "25",
+    "descriptionProduct": "Магний помогает преобразовывать углеводы, белки и жиры в энергию",
+    "imgName": "v433-09"
+  },
+  {
+    "id": "3",
+    "title": "Vitamin C",
+    "price": "15",
+    "descriptionProduct": "Чистая кристаллическая L-аскорбиновая кислота в доступной форме.",
+    "imgName": "vtc1_31"
+  }
+
+]

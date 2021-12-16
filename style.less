@@ -62,10 +62,53 @@ body {
 
 #Trolley {
     margin-left: 34px;
+    position: relative;
 }
 
 .header {
     background-color: #222222;
+}
+
+#Trolley-header {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 400px;
+    right: 40px;
+    top: 75px;
+    height: 200px;
+    padding: 20px;
+    color: white;
+    }
+//toDO: включить функцию присвоения класса инвиз после настройки
+.invisible {
+    //display: none;
+}
+
+.sumBasket {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productCart-bio {
+    }
+.productCart-sum {
+    .font(400, 1.1em, 1.2em);
+}
+
+.productCart-right{
+    float: right;
+}
+
+.product-textCart {
+    color: #eaeaea;
+    .font(400, 1em, 1.2em);
+}
+.product-priceCart {
+    .font(400, 0.6em, 1em);
+}
+
+.btn-del {
+    float: right;
 }
 
 .overlay-menu {
@@ -131,11 +174,10 @@ body {
         margin: 12px 0 0 20px;
     }
 
-    li:nth-child(2,3,4,5,6) {
+    li:nth-child(2n) {
         margin: 11px 0 0 20px;
     }
 }
-
 
 .menu-link {
     text-decoration: none;
@@ -335,10 +377,29 @@ body {
 }
 
 .button-products {
-    margin: 48.5px 0 0 465px;
+    margin: 120.5px 0 0 465px;
 }
 
 .btn-products {
+    width: 211px;
+    height: 47px;
+    text-align: center;
+    border: 1px solid @main-pink;
+    color: @main-pink;
+    .font(400, 16px, 19px);
+    background-color: #ffffff;
+    cursor: pointer;
+
+
+    &:hover {
+        background-color: @main-pink;
+        color: #ffffff;
+        transition: all ease-in-out .4s;
+    }
+}
+
+.btn-products1 {
+    margin: 30px 0 0 75px;
     width: 211px;
     height: 47px;
     text-align: center;
@@ -482,7 +543,6 @@ body {
     height: 49px;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
-    padding-left: 22px;
     .font(400, 14px, 16.8px);
     color: #FFFFFF;
     padding: 16px 20px;
@@ -561,14 +621,14 @@ body {
     .font(400, 24px, 29px);
     text-transform: uppercase;
 
-    &:hover {
-        transition-property: font-size, color;
-        transition-duration: 4s;
-        transition-delay: 0.5s;
-        font-size: 50px;
-        color: darkslategrey;
-        transition-timing-function: linear;
-    }
+    //&:hover {
+    //    transition-property: font-size, color;
+    //    transition-duration: 4s;
+    //    transition-delay: 0.5s;
+    //    font-size: 50px;
+    //    color: darkslategrey;
+    //    transition-timing-function: linear;
+    //}
 }
 
 .nav-bar a {
@@ -1153,9 +1213,8 @@ body {
     color: #ffffff;
     text-transform: uppercase;
     .font(300, 16px, 19px);
-    border-style: none;
     margin: 39px 0 0 0;
-    border: none;
+    border-style: none;
 }
 
 .text-perks {
@@ -1235,7 +1294,6 @@ body {
         width: 232px;
         background-size: 100%;
         background-image: url(image/Cat-women232x167.jpg);
-        //background-image: no-repeat;
         text-align: center;
         margin-top: 19.38px;
     }
@@ -1244,7 +1302,7 @@ body {
         height: 167.32px;
         width: 232px;
         background-size: 100%;
-        background-image: url(image/Cat-men232.44x167.62.jpg); /*no-repeat cover*//
+        background-image: url(image/Cat-men232.44x167.62.jpg);
         text-align: center;
         margin-top: 19.38px;
     }
@@ -1254,7 +1312,6 @@ body {
         width: 232px;
         background-size: 100%;
         background-image: url(image/Cat-kids232.44x167.62.jpg);
-        //background-image: no-repeat;
         text-align: center;
         margin-top: 19.38px;
     }
@@ -1288,7 +1345,6 @@ body {
         .font(700, 24px, 29px);
         color: #F16D7F;
     }
-
 
     .wrap-categories {
         height: 476px;
@@ -1403,7 +1459,7 @@ body {
     }
 
     .promo-pic {
-        min-width: 0%;
+        min-width: 0;
         background-image: none;
         min-height: 363px;
     }

@@ -62,10 +62,53 @@ body {
 
 #Trolley {
     margin-left: 34px;
+    position: relative;
 }
 
 .header {
     background-color: #222222;
+}
+
+#Trolley-header {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 400px;
+    right: 40px;
+    top: 75px;
+    height: 200px;
+    padding: 20px;
+    color: white;
+    }
+//toDO: включить функцию присвоения класса инвиз после настройки
+.invisible {
+    display: none;
+}
+
+.sumBasket {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productCart-bio {
+    }
+.productCart-sum {
+    .font(400, 1.1em, 1.2em);
+}
+
+.productCart-right{
+    float: right;
+}
+
+.product-textCart {
+    color: #eaeaea;
+    .font(400, 1em, 1.2em);
+}
+.product-priceCart {
+    .font(400, 0.6em, 1em);
+}
+
+.btn-del {
+    float: right;
 }
 
 .overlay-menu {
@@ -347,9 +390,11 @@ body {
     background-color: #ffffff;
     cursor: pointer;
 
+
     &:hover {
         background-color: @main-pink;
         color: #ffffff;
+        transition: all ease-in-out .4s;
     }
 }
 

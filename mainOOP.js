@@ -1,4 +1,5 @@
 const API = "https://raw.githubusercontent.com/DmitrievAS/json/main/package.json";
+const apiBasket = "https://raw.githubusercontent.com/DmitrievAS/json/main/Basket.json"
 
 class ProductItems {
     constructor(product) {
@@ -15,7 +16,7 @@ class ProductItems {
                 <p class="product-name">${this.title}</p>
                 <p class="product-text">${this.description}</p>
                 <p class="product-price">$${this.price}</p>
-                <button class="btn-products1">Купить</button>
+                <button class="btn-products1" id=product${this.id}>Купить</button>
             </div>`
     }
 }
@@ -157,37 +158,81 @@ class ProductList {
     }
 }
 
-
-//Тест на ответ от сервера данных Json,
-// ProductList.goods = fetch(API)
-//     .then((text) => {
-//         return text.json();
-//     })
-// .then((data) => {
-//     ProductList.goods = [...data];
-//     console.log(ProductList.goods);
-// });
-
-
 new ProductList();
 
-// class Basket {
-//     addGoods() {
-//
-//     }
-//
-//     removeGoods() {
-//
-//     }
-//
-//     changeGoods() {
-//
-//     }
-//
-//     render() {
-//
-//     }
-// }
+class ProductItemsCart {
+    constructor(productInCart) {
+        this.id = productInCart.id;
+        this.title = productInCart.title;
+        this.price = productInCart.price;
+        this.quantity = productInCart.quantity;
+    }
+
+    render() {
+        return `<div class="sumBasket">
+                    <div class="productCart-bio">
+                        <p class="product-textCart">${this.title} &times ${this.quantity}</p>
+                        <p class="product-priceCart">Цена: $${this.price}</p>
+                    </div>
+                    <div class="productCart-right">
+                        <p class="productCart-sum">$${this.quantity*this.price}</p>   
+                        <button class="btn-del" id=product${this.id}>X</button>
+                    </div>
+            </div>`
+    }
+}
+
+class Basket {
+
+    constructor(container = `#Trolley-header`) {
+        this.container = container;
+        this.goodsInBasket = [];
+        this.addGoods();
+    }
+
+
+    addGoods() {
+        this.goodsInBasket = fetch(apiBasket)
+            .then((text) => {
+                return text.json()
+            })
+            .then((data) => {
+                this.goodsInBasket = [...data];
+                this._render();
+            })
+    }
+
+    isVisibleCart() {
+        if (this.goodsInBasket.length > 0) {
+            document.querySelector(this.container).style.display = `flex`;
+        } else {
+            document.querySelector(this.container).style.display = `none`;
+        }
+    }
+
+    // removeGoods() {
+    //
+    // }
+    //
+    // changeGoods() {
+    //
+    // }
+
+    _render() {
+        {
+            const block = document.querySelector(this.container);
+            for (let productInCart of this.goodsInBasket) {
+                const productObjCart = new ProductItemsCart(productInCart);
+                block.insertAdjacentHTML("beforeend", productObjCart.render());
+            }
+
+
+        }
+
+    }
+}
+
+new Basket();
 
 
 // let ProductJSON = ProductItems.ProductList.goods.find(item => item.id == 1);

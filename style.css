@@ -24,9 +24,52 @@ body {
 }
 #Trolley {
   margin-left: 34px;
+  position: relative;
 }
 .header {
   background-color: #222222;
+}
+#Trolley-header {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 400px;
+  right: 40px;
+  top: 75px;
+  height: 200px;
+  padding: 20px;
+  color: white;
+}
+.invisible {
+  display: none;
+}
+.sumBasket {
+  display: flex;
+  justify-content: space-between;
+}
+.productCart-sum {
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  font-family: Lato, sans-serif;
+}
+.productCart-right {
+  float: right;
+}
+.product-textCart {
+  color: #eaeaea;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.2em;
+  font-family: Lato, sans-serif;
+}
+.product-priceCart {
+  font-weight: 400;
+  font-size: 0.6em;
+  line-height: 1em;
+  font-family: Lato, sans-serif;
+}
+.btn-del {
+  float: right;
 }
 .overlay-menu {
   position: absolute;
@@ -300,6 +343,7 @@ body {
 .btn-products:hover {
   background-color: #F26376;
   color: #ffffff;
+  transition: all ease-in-out 0.4s;
 }
 .btn-products1 {
   margin: 30px 0 0 75px;

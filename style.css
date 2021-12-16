@@ -39,9 +39,6 @@ body {
   padding: 20px;
   color: white;
 }
-.invisible {
-  display: none;
-}
 .sumBasket {
   display: flex;
   justify-content: space-between;
